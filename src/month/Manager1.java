@@ -1,5 +1,7 @@
 package month;
 
+import homeWork7.Month;
+
 public class Manager1 extends Employee{
 
     private int numberOfSubordinates;

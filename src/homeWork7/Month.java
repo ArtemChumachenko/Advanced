@@ -1,9 +1,9 @@
-package month;
+package homeWork7;
 
-public class Month {
-    private String nameOfMonth;
-    private int amountOfDays;
-    private int amountOfWorkDays;
+public final class Month {
+    private final String nameOfMonth;
+    private final int amountOfDays;
+    private final int amountOfWorkDays;
 
     public Month(String nameOfMonth, int amountOfDays, int amountOfWorkDays) {
         this.nameOfMonth = nameOfMonth;
@@ -15,12 +15,8 @@ public class Month {
         return nameOfMonth;
     }
 
-
     public int getAmountOfWorkDays() {
         return amountOfWorkDays;
     }
 
-    public void setAmountOfWorkDays(int amountOfWorkDays) {
-        this.amountOfWorkDays = amountOfWorkDays;
-    }
 }

@@ -1,14 +1,14 @@
-package month;
+package homeWork7;
 
-import homeWork7.Month;
+public abstract class BaseEmployee implements IEmployee{
 
-public class Employee {
     private String name;
     private int age;
     private char sex;
-    private int salaryPerDay;
+    protected int salaryPerDay;
 
-    public Employee(String name, int age, char sex, int salaryPerDay) {
+
+    public BaseEmployee(String name, int age, char sex, int salaryPerDay) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -46,26 +46,4 @@ public class Employee {
     public void setSalaryPerDay(int salaryPerDay) {
         this.salaryPerDay = salaryPerDay;
     }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", sex=" + sex +
-                ", salaryPerDay=" + salaryPerDay +
-                '}';
-    }
-
-    public int getSalary(Month[] arr) {
-          int salary = 0;
-          for (Month month : arr) {
-              salary += getSalaryPerDay () * month.getAmountOfWorkDays ();
-
-        }
-          return salary;
-
-    }
-
-
 }

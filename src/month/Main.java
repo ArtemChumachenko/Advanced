@@ -2,12 +2,8 @@ package month;
 
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static month.EmployeeUtilities.*;
-import static month.MonthUtils.*;
+import static homeWork7.EmployeeUtilities.*;
+import static homeWork7.MonthUtils.*;
 
 
 public class Main {

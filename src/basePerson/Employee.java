@@ -1,6 +1,6 @@
 package basePerson;
 
-public class Employee extends BasePerson{
+public abstract class Employee extends BasePerson{
 
     private int salary;
 
@@ -9,9 +9,7 @@ public class Employee extends BasePerson{
     super(name, age);
     }
 
-    public int getSalary() {
-        return salary;
-    }
+    public abstract void getSalary();
 
     public void setSalary(int salary) {
         this.salary = salary;
