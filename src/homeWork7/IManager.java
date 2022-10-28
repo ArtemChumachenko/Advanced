@@ -1,9 +1,12 @@
 package homeWork7;
 
-public interface IManager extends IEmployee {
+public interface IManager {
     int SALARY_COEFFICIENT = 2;
     int SALARY_COEFFICIENT_DIRECTOR = 4;
-    int getNumberOfSubordinates();
-    int getSalary(Month[] arr);
+    public int getNumberOfSubordinates() ;
+
+    public void setNumberOfSubordinates(int numberOfSubordinates) ;
+
+    public int getSalary(Month[] arr) ;
 
 }

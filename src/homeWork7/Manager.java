@@ -8,7 +8,7 @@ public class Manager extends BaseEmployee implements IManager {
         this.numberOfSubordinates = numberOfSubordinates;
     }
 
-    @Override
+
     public int getNumberOfSubordinates() {
         return numberOfSubordinates;
     }
